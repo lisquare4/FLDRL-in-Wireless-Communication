@@ -1,0 +1,16 @@
+# To create conda environment, run:
+# conda env create -f environment.yml
+name: FLDRL
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - python=3.8.5
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=10.2
+  - tqdm
