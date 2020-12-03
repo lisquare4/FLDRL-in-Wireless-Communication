@@ -322,9 +322,11 @@ class StationRl(Station):
 
         self.history.append([self.observation, self.action, 'unkonw'])
         if self.action:
+            print("[Action] Yes")
             self.collision = 0
             self.send_data()
         else:
+            print("[Action] No")
             self.time = self.time + 1
 
     def send_data(self):
