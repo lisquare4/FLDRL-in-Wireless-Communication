@@ -35,7 +35,7 @@ def train(model,
         optimizer.zero_grad()
         result = model(state)
         loss = loss_fc(result, q_target)
-        total_loss += loss
+        total_loss += loss.item()
         loss.backward()
         optimizer.step()
 
